@@ -6,12 +6,42 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-row>
-    <ion-col size="12">
-      <ion-item>
-        <ion-label position="floating">Loan Tenure(in Months)</ion-label>
-        <ion-input class="ion-text-right"></ion-input>
-      </ion-item>
-    </ion-col>
-  </ion-row>
+  <ion-grid>
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <h5>Equated Monthly Instalment</h5>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Loan Amount</ion-label>
+          <ion-input class="ion-text-right"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Rate of Interest(P.A)</ion-label>
+          <ion-input class="ion-text-right"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Loan Tenure(in Months)</ion-label>
+          <ion-input class="ion-text-right"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="calc">
+      <ion-col class="ion-text-center" size="12">
+        <ion-button (click)="calculate()">
+          <h2 class="signButton">Calculate</h2>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
